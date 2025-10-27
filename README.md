@@ -90,7 +90,7 @@ main/
 ```
 
 
-## 🖼️ Screenshots
+## Screenshots
 
 |           Login Screen          |         Home Dashboard        |            Garden View            |
 | :-----------------------------: | :---------------------------: | :-------------------------------: |
