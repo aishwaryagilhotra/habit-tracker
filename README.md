@@ -6,35 +6,35 @@ A beautifully designed **Habit Tracker App** that helps users build healthy habi
 
 ## Features
 
-* 🔐 **User Authentication**
+* **User Authentication**
 
   * Signup, Login, and Forgot Password screens
   * Local data storage for user details
 
-* ✅ **Habit Tracking**
+*  **Habit Tracking**
 
   * Add, edit, and delete habits
   * Track daily streaks and completions
 
-* 🌿 **Garden View**
+*  **Garden View**
 
   * Visual growth garden representing your consistency
 
-* 📊 **Statistics Dashboard**
+* **Statistics Dashboard**
 
   * Progress charts and habit performance visualization using `LineChartView.kt`
 
-* ⚙️ **Settings**
+* **Settings**
 
   * Manage profile, view stats, and logout
 
-* 💾 **Offline Support**
+*  **Offline Support**
 
   * Stores all data locally using **SQLite** (`DatabaseHelper.kt`)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category     | Technology                                      |
 | ------------ | ----------------------------------------------- |
@@ -47,7 +47,7 @@ A beautifully designed **Habit Tracker App** that helps users build healthy habi
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 main/
@@ -96,11 +96,10 @@ main/
 | :-----------------------------: | :---------------------------: | :-------------------------------: |
 | ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Garden](screenshots/garden.png) |
 
-*(Add screenshots inside a `/screenshots` folder in your repo)*
 
 ---
 
-## 💡 Future Improvements
+## Future Improvements
 
 * Sync with Firebase for cloud backup
 * Add habit reminders and notifications
