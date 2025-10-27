@@ -1,118 +1,111 @@
-# 🌱 Habit Tracker 
+# 🌱 Habit Tracker 3
 
-A modern and interactive **Habit Tracker App** built with **Android Studio (Kotlin)** to help users build better habits, visualize their progress, and stay motivated.
+A beautifully designed **Habit Tracker App** that helps users build healthy habits, track progress, and stay consistent — all built using **Kotlin** in **Android Studio**.
 
 ---
 
-## ✨ Features
+## Features
 
 * 🔐 **User Authentication**
 
-  * Signup, Login, and Forgot Password functionality
-  * Secure local data storage using SQLite
+  * Signup, Login, and Forgot Password screens
+  * Local data storage for user details
 
-* 📅 **Habit Management**
+* ✅ **Habit Tracking**
 
-  * Add, edit, or delete habits
-  * Track daily progress
-  * Maintain streaks and performance overview
+  * Add, edit, and delete habits
+  * Track daily streaks and completions
 
 * 🌿 **Garden View**
 
-  * Visual representation of your growth journey — each habit adds to your garden!
+  * Visual growth garden representing your consistency
 
 * 📊 **Statistics Dashboard**
 
-  * Displays habit completion data using charts and streak metrics
+  * Progress charts and habit performance visualization using `LineChartView.kt`
 
 * ⚙️ **Settings**
 
-  * Profile management and logout options
+  * Manage profile, view stats, and logout
 
-* 🧠 **Offline Support**
+* 💾 **Offline Support**
 
-  * Data stored locally using SQLite DatabaseHelper
-
----
-
-## 🧩 Tech Stack
-
-| Category      | Technology                                                    |
-| ------------- | ------------------------------------------------------------- |
-| Language      | **Kotlin**                                                    |
-| IDE           | **Android Studio**                                            |
-| Database      | **SQLite (via DatabaseHelper.kt)**                            |
-| UI Components | **Fragments, RecyclerView, Custom Views (LineChartView)**     |
-| Architecture  | **MVVM-like structure (ViewModel, Repository, Data classes)** |
+  * Stores all data locally using **SQLite** (`DatabaseHelper.kt`)
 
 ---
 
-## 📂 Folder Structure
+## 🛠️ Tech Stack
+
+| Category     | Technology                                      |
+| ------------ | ----------------------------------------------- |
+| Language     | **Kotlin**                                      |
+| IDE          | **Android Studio (Hedgehog / Ladybug)**         |
+| Database     | **SQLite**                                      |
+| Architecture | MVVM-like (ViewModel + Repository + Data Layer) |
+| UI           | XML, RecyclerView, Fragments, Custom Views      |
+| Tools        | Gradle, AndroidX, ViewBinding                   |
+
+---
+
+## 📂 Project Structure
 
 ```
-src/
-├── main/
-│   ├── AndroidManifest.xml
-│   ├── java/com/example/habit_tracker_3/
-│   │   ├── DatabaseHelper.kt
-│   │   ├── MainActivity.kt
-│   │   ├── HomeActivity.kt
-│   │   ├── Models.kt
-│   │   ├── Fragments/
-│   │   │   ├── HabitFragment.kt
-│   │   │   ├── GardenFragment.kt
-│   │   │   ├── StatsFragment.kt
-│   │   │   ├── SettingsFragment.kt
-│   │   │   ├── SignupFragment.kt
-│   │   │   ├── Login_Fragment.kt
-│   │   │   └── ForgotPasswordFragment.kt
-│   │   ├── ui/login/
-│   │   │   ├── HabitAdapter.kt
-│   │   │   ├── GardenAdapter.kt
-│   │   │   ├── LoginViewModel.kt
-│   │   │   ├── LoginRepository.kt
-│   │   │   └── LoginDataSource.kt
-│   └── res/
-│       ├── drawable/
-│       ├── layout/
-│       └── values/
+main/
+├── AndroidManifest.xml
+├── java/com/example/habit_tracker_3/
+│   ├── DatabaseHelper.kt
+│   ├── MainActivity.kt
+│   ├── HomeActivity.kt
+│   ├── Models.kt
+│   ├── HabitFragment.kt
+│   ├── GardenFragment.kt
+│   ├── StatsFragment.kt
+│   ├── SettingsFragment.kt
+│   ├── SignupFragment.kt
+│   ├── Login_Fragment.kt
+│   ├── ForgotPasswordFragment.kt
+│   ├── LineChartView.kt
+│   ├── data/
+│   │   ├── LoginRepository.kt
+│   │   ├── LoginDataSource.kt
+│   │   ├── Result.kt
+│   │   └── model/LoggedInUser.kt
+│   └── ui/login/
+│       ├── HabitAdapter.kt
+│       ├── GardenAdapter.kt
+│       ├── LoginViewModel.kt
+│       ├── LoginViewModelFactory.kt
+│       ├── LoginFormState.kt
+│       ├── LoginResult.kt
+│       └── LoggedInUserView.kt
+└── res/
+    ├── drawable/
+    │   ├── ic_add.xml
+    │   ├── ic_delete.xml
+    │   ├── ic_edit.xml
+    │   ├── ic_stats.xml
+    │   └── plant.png
+    ├── layout/
+    └── values/
 ```
 
----
 
-## 🚀 Getting Started
+## 🖼️ Screenshots
 
-### 1️⃣ Clone this repository
+|           Login Screen          |         Home Dashboard        |            Garden View            |
+| :-----------------------------: | :---------------------------: | :-------------------------------: |
+| ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Garden](screenshots/garden.png) |
 
-```bash
-git clone https://github.com/yourusername/habit-tracker.git
-```
-
-### 2️⃣ Open in Android Studio
-
-* Open **Android Studio**
-* Choose **Open an existing project**
-* Select the cloned folder
-
-### 3️⃣ Build and Run
-
-* Connect your Android device or launch an emulator
-* Click **Run ▶️**
+*(Add screenshots inside a `/screenshots` folder in your repo)*
 
 ---
 
-## 🖼️ Screenshots (Optional)
+## 💡 Future Improvements
 
-|              Login              |              Home             |              Stats              |
-| :-----------------------------: | :---------------------------: | :-----------------------------: |
-| ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Stats](screenshots/stats.png) |
+* Sync with Firebase for cloud backup
+* Add habit reminders and notifications
+* Calendar-based progress view
+* Daily motivational quotes
+* Improved UI with Jetpack Compose
 
 ---
-
-## 🧠 Future Enhancements
-
-* ☁️ Sync data with Firebase
-* 🔔 Add daily habit reminders
-* 🧘‍♀️ Introduce motivational quotes
-* 📅 Calendar-based progress tracking
-
