@@ -1,4 +1,4 @@
-# 🌱 Habit Tracker 3
+# 🌱 Habit Tracker
 
 A beautifully designed **Habit Tracker App** that helps users build healthy habits, track progress, and stay consistent — all built using **Kotlin** in **Android Studio**.
 
