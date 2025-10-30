@@ -143,9 +143,9 @@ main/
 
 ## Screenshots
 
-|           Login Screen          |         Home Dashboard        |            Garden View            |
+|           Login Screen          |         Habits Dashboard        |            Profile View            |
 | :-----------------------------: | :---------------------------: | :-------------------------------: |
-| ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Garden](screenshots/garden.png) |
+| ![Login](screenshots/login.jpeg) | ![Home](screenshots/garden.jpeg) | ![Garden](screenshots/profile.jpeg) |
 
 
 ---
