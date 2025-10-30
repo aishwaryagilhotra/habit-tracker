@@ -52,6 +52,7 @@ A beautifully designed **Habit Tracker App** that helps users build healthy habi
 ```
 main/
 ├── AndroidManifest.xml
+│
 ├── java/com/example/habit_tracker_3/
 │   ├── DatabaseHelper.kt
 │   ├── MainActivity.kt
@@ -65,11 +66,14 @@ main/
 │   ├── Login_Fragment.kt
 │   ├── ForgotPasswordFragment.kt
 │   ├── LineChartView.kt
+│   │
 │   ├── data/
 │   │   ├── LoginRepository.kt
 │   │   ├── LoginDataSource.kt
 │   │   ├── Result.kt
-│   │   └── model/LoggedInUser.kt
+│   │   └── model/
+│   │       └── LoggedInUser.kt
+│   │
 │   └── ui/login/
 │       ├── HabitAdapter.kt
 │       ├── GardenAdapter.kt
@@ -78,15 +82,62 @@ main/
 │       ├── LoginFormState.kt
 │       ├── LoginResult.kt
 │       └── LoggedInUserView.kt
+│
 └── res/
     ├── drawable/
+    │   ├── bg_image.png
+    │   ├── grey_button.xml
     │   ├── ic_add.xml
     │   ├── ic_delete.xml
     │   ├── ic_edit.xml
+    │   ├── ic_garden.xml
+    │   ├── ic_habit.xml
+    │   ├── ic_info.xml
+    │   ├── ic_launcher_background.xml
+    │   ├── ic_launcher_foreground.xml
+    │   ├── ic_logout.xml
+    │   ├── ic_settings.xml
     │   ├── ic_stats.xml
-    │   └── plant.png
+    │   ├── plant.png
+    │   ├── plant_dead.png
+    │   ├── plant_healthy.png
+    │   ├── plant_wilting.png
+    │   ├── rounded_button.xml
+    │   ├── rounded_edittext.xml
+    │   ├── rounded_image.xml
+    │   └── user.png
+    │
     ├── layout/
-    └── values/
+    │   ├── activity_home.xml
+    │   ├── activity_main.xml
+    │   ├── dialog_edit_profile.xml
+    │   ├── fragment_forgot_password.xml
+    │   ├── fragment_garden.xml
+    │   ├── fragment_habit.xml
+    │   ├── fragment_login.xml
+    │   ├── fragment_settings.xml
+    │   ├── fragment_signup.xml
+    │   ├── fragment_stats.xml
+    │   ├── item_habit.xml
+    │   └── plant_card.xml
+    │
+    ├── menu/
+    │   └── bottom_nav_menu.xml
+    │
+    ├── mipmap/
+    │   ├── ic_launcher/
+    │   └── ic_launcher_round/
+    │
+    ├── values/
+    │   ├── colors.xml
+    │   ├── dimens.xml
+    │   ├── strings.xml
+    │   └── themes.xml
+    │
+    └── xml/
+        ├── backup_rules.xml
+        └── data_extraction_rules.xml
+
 ```
 
 
